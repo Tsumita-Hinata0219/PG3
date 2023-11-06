@@ -26,6 +26,7 @@ std::string CalcDiceRoll() {
     return ans;
 }
 
+// プレイヤー
 std::string DecideDiceRoll() {
 
     std::cout << "　親 : 丁か？半か？\n";
@@ -35,19 +36,11 @@ std::string DecideDiceRoll() {
     std::cout << "お前 : ";
     std::getline(std::cin, plaAns);
 
+    std::cout << "\n親 : よこざんすね\n\n";
+
     return plaAns;
 }
 
-void Wait(Func func, std::string plaans) {
-
-    std::cout << "\n親 : よこざんすね\n\n";
-
-    //Sleep(3 * 1000);
-    using namespace std::chrono_literals;
-    std::this_thread::sleep_for(3s);
-
-    func(plaans);
-}
 
 void DisplayResult(std::string plaAns) {
 
