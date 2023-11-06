@@ -129,7 +129,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ayataka.cpp" />
+    <ClCompile Include="Iemon.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OiOcha.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ayataka.h" />
+    <ClInclude Include="Iemon.h" />
+    <ClInclude Include="OiOcha.h" />
+    <ClInclude Include="Tea.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
