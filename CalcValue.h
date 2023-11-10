@@ -1,27 +1,27 @@
 #pragma once
 
 
-template <typename T>
+template <typename T1, typename T2>
 class Calc {
 
 public:
 
-	Calc(T valA, T valB) : numA(valA), numB(valB) {};
+	Calc(T1 valA, T2 valB) : numA(valA), numB(valB) {};
 
-	T Min() {
+	T1 Min() {
 
 		if (numA < numB) {
-			return numA;
+			return (numA);
 		}
 		else {
-			return numB;
+			return static_cast<T1>(numB);
 		}
 	}
 
 
 private:
 
-	T numA;
-	T numB;
+	T1 numA;
+	T2 numB;
 };
 

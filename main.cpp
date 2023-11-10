@@ -4,14 +4,20 @@
 
 int main() {
 
-	Calc<int> val1(10, 42);
-	Calc<float> val2(129.0f, 34.0f);
-	Calc<double> val3(23.0f, 456.0f);
+	Calc<int, int> val1(39, 42);
+	Calc<int, float> val2(16, 34.0f);
+	Calc<int, double> val3(12, 89.0f);
+	Calc<float, float> val4(129.0f, 34.0f);
+	Calc<float, double> val5(23.0f, 456.0f);
+	Calc<double, double> val6(39.0f, 29.0f);
 
 	
-	std::cout << "val1<int> : " << val1.Min() << std::endl;
-	std::cout << "val2<float> : " << val2.Min() << std::endl;
-	std::cout << "val3<double> : " << val3.Min() << std::endl;
+	std::cout << "val1 <int, int>       : " << val1.Min() << std::endl;
+	std::cout << "val2 <int, float>     : " << val2.Min() << std::endl;
+	std::cout << "val3 <int, double>    : " << val3.Min() << std::endl;
+	std::cout << "val4 <float, float>   : " << val4.Min() << std::endl;
+	std::cout << "val5 <float, double>  : " << val5.Min() << std::endl;
+	std::cout << "val6 <double, double> : " << val6.Min() << std::endl;
 
 
 	return 0;
