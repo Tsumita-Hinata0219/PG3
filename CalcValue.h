@@ -1,16 +1,23 @@
 #pragma once
 
-#ifndef CALC_H
-#define CALC_H
 
 template <typename T>
 class Calc {
 
 public:
 
-	Calc(T valA, T valB);
+	Calc(T valA, T valB) : numA(valA), numB(valB) {};
 
-	T Min();
+	T Min() {
+
+		if (numA < numB) {
+			return numA;
+		}
+		else {
+			return numB;
+		}
+	}
+
 
 private:
 
@@ -18,8 +25,3 @@ private:
 	T numB;
 };
 
-
-#include "CalcValue.cpp"
-
-
-#endif
