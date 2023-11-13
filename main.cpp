@@ -19,14 +19,8 @@ int main() {
 	// それぞれの情報を表示
 	for (int i = 0; i < 3; i++) {
 
-		std::cout << "　商品名 : ";
 		tea[i]->DisplayProductName();
-
-		std::cout << "メーカー : ";
 		tea[i]->DisplayManufactureName();
-
-		// 改行
-		std::cout << std::endl;
 	}
 
 	for (int i = 0; i < 3; i++) {
