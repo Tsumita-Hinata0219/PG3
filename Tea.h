@@ -14,10 +14,10 @@ public: // メンバ関数
 	virtual ~Tea() {};
 
 	// 商品名の表示
-	virtual void DisplayProductName() {};
+	virtual void DisplayProductName();
 	
 	// メーカーの表示
-	virtual void DisplayManufactureName() {};
+	virtual void DisplayManufactureName();
 
 
 protected: // メンバ変数

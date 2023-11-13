@@ -10,15 +10,3 @@ OiOcha::OiOcha() {
 }
 
 
-// 商品名の表示
-void OiOcha::DisplayProductName() {
-
-	std::cout << productName_ << std::endl;
-}
-
-// メーカーの表示
-void OiOcha::DisplayManufactureName() {
-
-	std::cout << ManufactureName_ << std::endl;
-}
-

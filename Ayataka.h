@@ -12,11 +12,5 @@ public:
 
 	// デストラクタ
 	~Ayataka() {};
-
-	// 商品名の表示
-	void DisplayProductName() override;
-
-	// メーカーの表示
-	void DisplayManufactureName() override;
 };
 

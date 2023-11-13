@@ -11,14 +11,3 @@ Iemon::Iemon() {
 }
 
 
-// 商品名の表示
-void Iemon::DisplayProductName() {
-
-	std::cout << productName_ << std::endl;
-}
-
-// メーカーの表示
-void Iemon::DisplayManufactureName() {
-
-	std::cout << ManufactureName_ << std::endl;
-}
