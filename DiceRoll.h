@@ -11,8 +11,8 @@
 using namespace std::chrono_literals;
 
 
-typedef void (*Func1)(std::string);
-typedef void (*Func2)(Func1);
+typedef void (*Func2)(std::string);
+typedef void (*Func1)(Func2, std::string);
 
 
 std::string CalcDiceRoll();
@@ -21,5 +21,5 @@ std::string DecidePlayerDice();
 
 void DisplayResult(std::string plaAns);
 
-void SetTimeout(Func2 func);
+void SetTimeout(Func2 func, std::string plaAns);
 

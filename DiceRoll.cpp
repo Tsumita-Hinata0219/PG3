@@ -64,10 +64,9 @@ void DisplayResult(std::string plaAns) {
 }
 
 
-void SetTimeout(Func2 func) {
+void SetTimeout(Func2 func, std::string plaans) {
 
     std::this_thread::sleep_for(3s);
 
-
-    func();
+    func(plaans);
 }
