@@ -21,5 +21,5 @@ std::string DecidePlayerDice();
 
 void DisplayResult(std::string plaAns);
 
-void SetTimeout(Func2 func, std::string plaAns);
+void SetTimeout(std::chrono::seconds sleep_duration, Func2 func, std::string plaAns);
 

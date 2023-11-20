@@ -64,9 +64,9 @@ void DisplayResult(std::string plaAns) {
 }
 
 
-void SetTimeout(Func2 func, std::string plaans) {
+void SetTimeout(std::chrono::seconds sleep_duration, Func2 func, std::string plaans) {
 
-    std::this_thread::sleep_for(3s);
+    std::this_thread::sleep_for(sleep_duration);
 
     func(plaans);
 }
