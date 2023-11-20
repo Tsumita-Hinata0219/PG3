@@ -1,10 +1,13 @@
 #include "DiceRoll.h"
 
+
+using namespace std::chrono_literals;
+
+
 int main() {
 
-	std::function<void(Func, std::string)>SetTimeout = [](Func func, std::string plaans) {
+	std::function<void(Func, std::string)>SetTimeout = [=](Func func, std::string plaans) {
 
-		using namespace std::chrono_literals;
 		std::this_thread::sleep_for(3s);
 
 		func(plaans);
