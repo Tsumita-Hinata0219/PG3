@@ -63,3 +63,9 @@ void DisplayResult(std::string plaAns) {
         std::cout << "---そうして、全財産を失ったお前は、ゴミみたいな人生を送るのだった・・・\n\n\n\n";
     }
 }
+
+
+std::function<int> SetTimeout() {
+
+    std::this_thread::sleep_for(3s);
+}
