@@ -9,7 +9,7 @@ int main() {
 	};
 
 
-	int setTimeout = setTimeout();
+	
 	std::string plaAns = DecideDiceRoll();
 	Func func = DisplayResult;
 
