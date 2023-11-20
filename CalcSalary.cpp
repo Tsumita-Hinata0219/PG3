@@ -17,7 +17,8 @@ int CalcSalary::CalculateRecursionSalary(int salary, int workTime) {
 
     std::cout << "再帰的な賃金体系 : " << salary << std::endl;
 
-    int result = salary + (salary * 2 - 50);
+    int result = preRecursionSalary_ + (salary * 2 - 50);
+    preRecursionSalary_ = result;
 
     return  result;
 }
