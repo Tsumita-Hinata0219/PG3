@@ -6,7 +6,7 @@
 class CalcSalary {
 public:
 
-	int CalculateNormalSalary(int salary);
+	int CalculateNormalSalary(int salary, int workTime);
 	int CalculateRecursionSalary(int salary, int workTime);
 	int CalculateAndPrintSalary(int workTime);
 
