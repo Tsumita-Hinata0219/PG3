@@ -49,7 +49,6 @@ void DisplayResult(std::string plaAns) {
     std::cout << "　親 : " << oyaAns << "\n";
     std::cout << "お前 : " << plaAns << "\n";
 
-    using namespace std::chrono_literals;
     std::this_thread::sleep_for(1s);
 
     if (oyaAns == plaAns) {
@@ -65,7 +64,10 @@ void DisplayResult(std::string plaAns) {
 }
 
 
-void SetTimeout() {
+void SetTimeout(Func2 func) {
 
     std::this_thread::sleep_for(3s);
+
+
+    func();
 }

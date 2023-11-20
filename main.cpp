@@ -6,13 +6,13 @@ int main() {
 
 	std::function<void(Func1, Func2, std::string)> DiceRollGame = [=](Func1 func1, Func2 func2, std::string plaans) {
 
-		func1();
-		func2(plaans);
+		func1(func2(plaans));
+		//func2(plaans);
 	};
 
 
-	Func1 func1 = SetTimeout;
-	Func2 func2 = DisplayResult;
+	Func2 func1 = SetTimeout;
+	Func1 func2 = DisplayResult;
 	std::string plaAns = DecidePlayerDice();
 
 
@@ -20,3 +20,4 @@ int main() {
 
 	return 0;
 }
+
