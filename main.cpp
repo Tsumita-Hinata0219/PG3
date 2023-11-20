@@ -3,18 +3,20 @@
 
 int main() {
 
-	std::function<void(int, Func, std::string)> DiceRollGame = [=](int SetTimeout, Func func, std::string plaans) {
 
-		func(plaans);
+	std::function<void(Func1, Func2, std::string)> DiceRollGame = [=](Func1 func1, Func2 func2, std::string plaans) {
+
+		func1();
+		func2(plaans);
 	};
 
 
-	
-	std::string plaAns = DecideDiceRoll();
-	Func func = DisplayResult;
+	Func1 func1 = SetTimeout;
+	Func2 func2 = DisplayResult;
+	std::string plaAns = DecidePlayerDice();
 
 
-	DiceRollGame(func, plaAns);
+	DiceRollGame(func1, func2, plaAns);
 
 	return 0;
 }

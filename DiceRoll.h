@@ -11,13 +11,15 @@
 using namespace std::chrono_literals;
 
 
-typedef void (*Func)(std::string);
+typedef void (*Func1)(void);
+typedef void (*Func2)(std::string);
 
 
 std::string CalcDiceRoll();
 
-std::string DecideDiceRoll();
+std::string DecidePlayerDice();
 
 void DisplayResult(std::string plaAns);
 
-std::function<int> SetTimeout();
+void SetTimeout();
+

@@ -27,7 +27,7 @@ std::string CalcDiceRoll() {
 }
 
 // プレイヤー
-std::string DecideDiceRoll() {
+std::string DecidePlayerDice() {
 
     std::cout << "　親 : 丁か？半か？\n";
 
@@ -65,7 +65,7 @@ void DisplayResult(std::string plaAns) {
 }
 
 
-std::function<int> SetTimeout() {
+void SetTimeout() {
 
     std::this_thread::sleep_for(3s);
 }
