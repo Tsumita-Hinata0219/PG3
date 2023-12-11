@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <list>
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 
 int main() {
@@ -53,7 +55,7 @@ int main() {
 			++itr;
 		}
 	}
-
+	
 	// 追加後のリストの描画
 	std::cout << "\n2022年(高輪ゲートウェイ駅追加)" << std::endl;
 	for (auto itr = lst.begin(); itr != lst.end(); ++itr) {
