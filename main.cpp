@@ -15,7 +15,7 @@ int main() {
 
 
 	// 初期リストの出力
-	std::cout << "1970" << std::endl;
+	std::cout << "1970開業" << std::endl;
 	for (auto itr = lst.begin(); itr != lst.end(); ++itr) {
 
 		std::cout << *itr << std::endl;
@@ -35,7 +35,7 @@ int main() {
 	}
 
 	// 追加後のリストの描画
-	std::cout << "\n2019" << std::endl;
+	std::cout << "\n2019年(西日暮里駅追加)" << std::endl;
 	for (auto itr = lst.begin(); itr != lst.end(); ++itr) {
 
 		std::cout << *itr << std::endl;
@@ -55,7 +55,7 @@ int main() {
 	}
 
 	// 追加後のリストの描画
-	std::cout << "\n2022" << std::endl;
+	std::cout << "\n2022年(高輪ゲートウェイ駅追加)" << std::endl;
 	for (auto itr = lst.begin(); itr != lst.end(); ++itr) {
 
 		std::cout << *itr << std::endl;
